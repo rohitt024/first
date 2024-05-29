@@ -1,54 +1,56 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f0f8ff;
-}
-header {
-    background: #1e90ff;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-#search {
+    background-color: #f0f8ff;
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-#search input {
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     margin-right: 10px;
 }
-#search button {
-    padding: 10px;
+
+button {
+    padding: 10px 15px;
     font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    background: #1e90ff;
+    background-color: #007BFF;
     color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
-#current-weather, #forecast {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+button:hover {
+    background-color: #0056b3;
 }
-#current-weather h2, #forecast h2 {
-    margin-top: 0;
+
+.weather-result {
+    margin-top: 20px;
+    font-size: 18px;
 }
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #1e90ff;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+
+.weather-result p {
+    margin: 5px 0;
 }
