@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Forecast</h1>
+    </header>
+    <main>
+        <section id="search">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()">Search</button>
+        </section>
+        <section id="current-weather">
+            <h2>Current Weather</h2>
+            <div id="current-weather-details">
+                <!-- Weather details will be populated here -->
+            </div>
+        </section>
+        <section id="forecast">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast-details">
+                <!-- Forecast details will be populated here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Weather data provided by OpenWeatherMap</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
